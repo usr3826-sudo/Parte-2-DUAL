@@ -9,4 +9,17 @@ public class Matematico extends Investigador {
         super(nombre, "Matemático", sueldo); // especialidad fija
         this.matriz = matriz;
     }
+
+     @Override
+    public String estadoSueldo() {
+
+        return sueldo < 1800 ? "Debe pedir aumento." : "Sueldo correcto.";
+    }
+
+    @Override
+    public void trabajar() {
+        System.out.println("Mostrando matriz actual:");
+        mostrarMatriz();
+    }
+    
 }
