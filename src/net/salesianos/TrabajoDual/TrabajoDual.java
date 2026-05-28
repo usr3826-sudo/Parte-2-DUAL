@@ -1,5 +1,6 @@
 package net.salesianos.TrabajoDual;
 
-public class TrabajoDual {
-    
+public interface TrabajoDual {
+    void trabajoDual();
 }
+
