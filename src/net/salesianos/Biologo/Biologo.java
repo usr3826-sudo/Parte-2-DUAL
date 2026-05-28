@@ -13,4 +13,28 @@ public class Biologo extends Investigador implements TrabajoDual {
         super(nombre, "Biólogo", sueldo);
     }
 
+    public void anadir(String esp) {
+        especimenes.add(esp);
+    }
+
+    @Override
+    public String estadoSueldo() {
+
+        return sueldo < 1500 ? "Debe pedir aumento." : "Sueldo correcto.";
+    }
+
+    @Override
+    public void trabajar() {
+        if (especimenes.isEmpty()) {
+            System.out.println("No hay especímenes.");
+            return; 
+        }
+
+        especimenes.sort((a, b) -> a.length() - b.length());
+        
+        String eliminado = especimenes.remove(especimenes.size() - 1);
+
+        System.out.println("Eliminado el espécimen más largo: " + eliminado);
+    }
+
 }
