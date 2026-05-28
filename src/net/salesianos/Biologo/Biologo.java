@@ -31,10 +31,19 @@ public class Biologo extends Investigador implements TrabajoDual {
         }
 
         especimenes.sort((a, b) -> a.length() - b.length());
-        
+
         String eliminado = especimenes.remove(especimenes.size() - 1);
 
         System.out.println("Eliminado el espécimen más largo: " + eliminado);
     }
-
+    @Override
+    public void trabajoDual() {
+        System.out.println("Biólogo en trabajo dual → invirtiendo lista");
+        Collections.reverse(especimenes);
+    }
+    
+    public ArrayList<String> getEspecimenes() {
+        return especimenes;
+    }
 }
+
