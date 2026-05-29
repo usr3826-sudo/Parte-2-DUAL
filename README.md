@@ -1,19 +1,70 @@
-## Getting Started
+Parte 2-dual
+Aplicación en Java que simula  una sede científica formada por matemáticos, biólogos y químicos. Cada investigador tiene comportamientos propios y un sistema de trabajo dual colaborativo.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Funcionalidades 
+Gestión de investigadores mediante clases abstractas e interfaces
 
-## Folder Structure
+Implementación de herencia, polimorfismo y sobrecarga de métodos
 
-The workspace contains two folders by default, where:
+Uso de arrays y ArrayList para almacenar datos
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Control de errores con try/catch
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Menú interactivo para seleccionar y ejecutar acciones de cada investigador
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+ Tipos de investigadores
+ 
+ Matemático
+Trabaja con una matriz 3x3
+Puede mostrarla, multiplicarla o sumarla con otra matriz
+Sueldo recomendado: ≥ 1800€
 
-## Dependency Management
+ Biólogo
+Gestiona una lista de especímenes
+Trabajo normal: ordenar por longitud y eliminar el mayor
+Trabajo dual: invertir la lista
+Sueldo recomendado: ≥ 1500€
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-"# Parte-2-DUAL"  
+ Químico
+Gestiona una lista de elementos químicos
+Trabajo normal: invertir la lista
+Trabajo dual: ordenar por longitud y eliminar el mayor
+Sueldo recomendado: ≥ 1200€
+
+Trabajo Dual
+Sistema colaborativo donde:
+
+El químico realiza el trabajo del biólogo
+
+El biólogo realiza el trabajo del químico
+
+Implementado mediante la interfaz TrabajoDual.
+
+ Tecnologías utilizadas
+Java
+
+Programación Orientada a Objetos
+
+Arrays y ArrayList
+
+Control de errores
+
+ Objetivo educativo
+Este proyecto sirve como práctica completa de:
+
+Clases abstractas
+
+Interfaces
+
+Herencia
+
+Polimorfismo
+
+Sobrecarga de métodos
+
+Colecciones
+
+Manejo de errores
+
+
+Manejo de errores
